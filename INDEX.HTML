@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Asegura que la página sea responsive y se adapte a pantallas de celulares -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hola, soy Maria Fernanda</title>
+  
+  <style>
+    /* Reset básico y configuración de la tipografía general */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Fondo general con degradado suave en tonos pastel */
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #e0c3fc 0%, #f2b8e3 50%, #e0f2fe 100%);
+      color: #334155;
+    }
+
+    /* Tarjeta principal con efecto de cristal translúcido (Glassmorphism) */
+    .container {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 24px;
+      padding: 40px 30px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      text-align: center;
+    }
+
+    /* Encabezado principal */
+    h1 {
+      font-size: 2rem;
+      color: #475569;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+
+    /* Subtítulo con la carrera y universidad */
+    .subtitle {
+      font-size: 1rem;
+      color: #64748b;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    /* Etiqueta destacada para la UTP */
+    .badge {
+      display: inline-block;
+      background-color: #fbcfe8;
+      color: #831843;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 5px;
+    }
+
+    /* Sección de gustos e intereses */
+    .interests {
+      margin-top: 25px;
+      text-align: left;
+    }
+
+    .interests h2 {
+      font-size: 1.2rem;
+      color: #475569;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .interests-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Tarjetas individuales de cada gusto con colores pastel difuminados */
+    .interest-item {
+      padding: 14px 18px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      color: #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s ease;
+    }
+
+    .interest-item:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Estilos específicos y gradientes para cada item */
+    .item-1 {
+      background: linear-gradient(90deg, #dcfce7, #f0fdf4);
+      border-left: 5px solid #86efac;
+    }
+
+    .item-2 {
+      background: linear-gradient(90deg, #fef3c7, #fffbeb);
+      border-left: 5px solid #fde047;
+    }
+
+    .item-3 {
+      background: linear-gradient(90deg, #e0e7ff, #ee2f8e0);
+      border-left: 5px solid #a5b4fc;
+    }
+
+    .icon {
+      font-size: 1.3rem;
+    }
+
+    /* Adaptación específica para pantallas de celulares pequeños */
+    @media (max-width: 480px) {
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Hola, soy maria fernanda</h1>
+      <p class="subtitle">
+        Estudiante de <strong>Tecnología en Desarrollo de Software</strong><br>
+        <span class="badge">UTP - Pereira</span>
+      </p>
+    </header>
+
+    <section class="interests">
+      <h2>Lo que me gusta:</h2>
+      <ul class="interests-list">
+        <li class="interest-item item-1">
+          <span class="icon">🌿</span>
+          <span>La naturaleza</span>
+        </li>
+        <li class="interest-item item-2">
+          <span class="icon">💡</span>
+          <span>cantar</span>
+        </li>
+        <li class="interest-item item-3">
+          <span class="icon">📖</span>
+          <span>Estudiar la palabra de Dios</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>
